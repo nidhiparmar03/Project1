@@ -5,19 +5,19 @@ export default class City extends Component {
         super(props);
 
         this. state= {
-            CountryName: 'Surat'
+            CityName: 'Surat'
         }
     }
-    changeCountry= () => {
+    changeCity= () => {
         this. setState ({
-            CountryName: 'Ahemdabad'
+            CityName: 'Ahemdabad'
         });
     }
     render() {
         return (
         <div>
-            <p>{this.state.CountryName}</p>
-            <button onClick={() =>this.changeCountry()}>Change Country</button>
+            <p>{this.state.CityName}</p>
+            <button onClick={() =>this.changeCity()}>Change City</button>
         </div>
         );
     }
